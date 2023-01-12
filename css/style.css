@@ -40,6 +40,7 @@ a {
 .col__player {
     height: auto;
     flex-shrink: 0;
+    color: white;
     background-color: var(--gray);
     position: fixed;
     bottom: 0;
@@ -50,6 +51,7 @@ a {
 .header {
     width: 200px;
     flex-shrink: 0;
+    background-color: black;
 }
 
 /******** DEBUG **********/
@@ -83,7 +85,9 @@ a {
         width: 80px;
     }
 
-    .col__player{
-        position: static;
-    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
 }

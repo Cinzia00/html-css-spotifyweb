@@ -37,12 +37,6 @@ html {
     color: white;
 }
 
-.sidebar {
-    width: 200px;
-    flex-shrink: 0;
-    background-color: black;
-}
-
 .col__main {
     height: calc(100vh - 90px);
     flex-grow: 1;
@@ -105,7 +99,7 @@ html {
 .row-bottom .col {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
 }
 
 .cover-row-bottom {
@@ -113,11 +107,18 @@ html {
     width: 50px;
 }
 
+.row-col__player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .col .comandi__player {
     aspect-ratio: 1;
     width: 30px;
     background-color: red;
     border: 1px solid black;
+
 }
 
 .col-comandi__player {
@@ -138,4 +139,43 @@ html {
     font-weight: 400;
     color: lightgray;
     font-size: 12px;
+}
+
+.barra_avanzamento {
+    border: 2px solid lightgray;
+    width: 30px;
+}
+
+.playlist {
+    text-transform: uppercase;
+}
+
+/* ****SIDEBAR**** */
+
+.sidebar {
+    width: 200px;
+    flex-shrink: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.logo { 
+    width: 130px;
+}
+
+.sidebar_installa-app {
+    margin-top: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.login_sidebar {
+    margin-top: 10px;
+}
+
+.music__list {
+    line-height: 35px;
 }

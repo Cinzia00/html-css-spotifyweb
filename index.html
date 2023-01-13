@@ -11,26 +11,35 @@
 <body class="container">
     <div class="row row-top">
         <aside class="sidebar">
-            <div class="logo">
+            <div class="logo sidebar-item">
                 <img src="./img/logo.svg" alt="">
             </div>
-            <div class="sidebar-menu">
+            <div class="logo-small">
+                <img src="./img/logo-small.svg" alt="">
+            </div>
+            <div class="sidebar-menu sidebar-item">
                 <div>
                     <i class="fa-solid fa-house"></i>
-                    Cerca
+                    <span class="text-menu-sidebar">Home</span>
                 </div>
-                <div>
+                <div class="font-color">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span class="text-menu-sidebar">Cerca</span>
+                </div>
+                <div class="font-color">
                     <i class="fa-solid fa-grip-lines-vertical"></i>
-                    La tua libreria
+                    <span class="text-menu-sidebar">La tua libreria</span>
                 </div>
             </div>
-            <div class="sidebar-playlist">
+            <div class="sidebar-playlist text-menu-sidebar">
                 <p class="playlist">Playlist</p>
-                <div>
-                    <i class="fa-solid fa-square-plus"></i>
-                    Crea Playlist
-                </div>
-                <ul class="music__list">
+                <ul class="music__list font-color">
+                    <li>
+                        <span class="button_crea_playlist">
+                            <i class="fa-solid fa-square-plus"></i>
+                        </span>
+                        Crea Playlist
+                    </li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
@@ -40,13 +49,14 @@
                     <li>Nome Playlist</li>
                 </ul>
             </div>
-            <div class="sidebar_installa-app">
+            <div class="sidebar_installa-app font-color">
                 <i class="fa-solid fa-circle-arrow-down"></i>
-                Installa app
+                <span class="text-menu-sidebar">Installa app</span> 
             </div>
+            <div class="border-sidebar text-menu-sidebar font-color"></div>
             <div class="login_sidebar">
                 <i class="fa-solid fa-circle-user"></i>
-                John Doe
+                <span class="text-menu-sidebar">John Doe</span>
             </div>
         </aside>
         <div class="col__main">
@@ -64,10 +74,10 @@
                 </figure>
                 <div>
                     <div>Sinister</div>
-                    <div class="brano">Brano nome</div>
+                    <div class="brano font-color">Brano nome</div>
                 </div>
                 <div>
-                    <div class="icon">
+                    <div class="icon font-color">
                         <div class="icon">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -82,14 +92,24 @@
     
     
     
-            <div class="">
+            <div class="row-comandi__player">
                 <div class="col-comandi__player">
                     <ul class="col">
-                        <li class="comandi__player"></li>
-                        <li class="comandi__player"></li>
-                        <li class="comandi__player"></li>
-                        <li class="comandi__player"></li>
-                        <li class="comandi__player"></li>
+                        <li class="comandi__player">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </li>
+                        <li class="comandi__player">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </li>
+                        <li class="comandi__player">
+                            <i class="fa-solid fa-play"></i>
+                        </li>
+                        <li class="comandi__player">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </li>
+                        <li class="comandi__player">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </li>
                     </ul>
                 </div>
                 <div class="">

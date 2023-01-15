@@ -18,16 +18,22 @@
                 <img src="./img/logo-small.svg" alt="">
             </div>
             <div class="sidebar-menu sidebar-item">
-                <div>
+            <div>       
+                <div class="big-icon">
                     <i class="fa-solid fa-house"></i>
+                </div>
                     <span class="text-menu-sidebar">Home</span>
-                </div>
-                <div class="font-color">
+            </div>
+            <div>
+                <div class="font-color margin-sidebar_list big-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <span class="text-menu-sidebar">Cerca</span>
                 </div>
+                <span class="text-menu-sidebar">Cerca</span>
+            </div>
                 <div class="font-color">
-                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                    <div class="big-icon">
+                        <i class="fa-solid fa-grip-lines-vertical"></i>
+                    </div>
                     <span class="text-menu-sidebar">La tua libreria</span>
                 </div>
             </div>
@@ -35,9 +41,9 @@
                 <p class="playlist">Playlist</p>
                 <ul class="music__list font-color">
                     <li>
-                        <span class="button_crea_playlist">
+                        <div class="button_crea_playlist">
                             <i class="fa-solid fa-square-plus"></i>
-                        </span>
+                        </div>
                         Crea Playlist
                     </li>
                     <li>Nome Playlist</li>
@@ -50,16 +56,23 @@
                 </ul>
             </div>
             <div class="sidebar_installa-app font-color">
-                <i class="fa-solid fa-circle-arrow-down"></i>
+                <div class="arrow-sidebar">
+                    <i class="fa-solid fa-circle-arrow-down"></i>
+                </div>
                 <span class="text-menu-sidebar">Installa app</span> 
             </div>
             <div class="border-sidebar text-menu-sidebar font-color"></div>
             <div class="login_sidebar">
-                <i class="fa-solid fa-circle-user"></i>
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
                 <span class="text-menu-sidebar">John Doe</span>
             </div>
         </aside>
         <div class="col__main">
+            <div class="button-effettua__uppgrade">
+                <button>EFFETTUA L'UPGRADE</button>
+            </div>
         </div>
     </div>
 
@@ -93,48 +106,46 @@
     
     
             <div class="row-comandi__player">
-                <div class="col-comandi__player">
-                    <ul class="col">
-                        <li class="comandi__player">
+                <div class="col-2 col-comandi__player">
+                    <ul class="comandi__player">
+                        <li>
                             <i class="fa-solid fa-shuffle"></i>
                         </li>
-                        <li class="comandi__player">
+                        <li>
                             <i class="fa-solid fa-backward-step"></i>
                         </li>
-                        <li class="comandi__player">
+                        <li>
                             <i class="fa-solid fa-play"></i>
                         </li>
-                        <li class="comandi__player">
+                        <li>
                             <i class="fa-solid fa-forward-step"></i>
                         </li>
-                        <li class="comandi__player">
+                        <li>
                             <i class="fa-solid fa-rotate-right"></i>
                         </li>
                     </ul>
                 </div>
-                <div class="">
-                    <div class="row-col__player">
-                        <div class="minutes">0:25</div>
-                        <div class="barra_avanzamento"></div>
-                        <div class="minutes">4:35</div>
-                    </div>
+                <div class="row-col__player">
+                    <div class="minutes">0:25</div>
+                    <div class="barra_avanzamento player"></div>
+                    <div class="minutes">4:35</div>
                 </div>
             </div>
     
     
     
-            <div class="col">
-                    <div>
+            <div class="col col-player-right">
+                    <div class="right-buttons">
                         <i class="fa-solid fa-list"></i>
                     </div>
-                    <div>
+                    <div class="right-buttons">
                         <i class="fa-solid fa-desktop"></i>
                     </div>
                     <div class="col">
                         <div>
                             <i class="fa-solid fa-volume-high"></i>
                         </div>
-                        <div class="barra_avanzamento"></div>
+                        <div class="barra_avanzamento volume"></div>
                     </div>
     
             </div>

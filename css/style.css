@@ -112,6 +112,7 @@ html {
 .comandi__player {
     display: flex;
     justify-content: center;
+    font-size: 20px;
 }
 
 .comandi__player li {
@@ -125,7 +126,7 @@ html {
 
 .icon {
     display: flex;
-    margin-left: 15px;
+    margin-left: 13px;
 }
 
 .brano {
@@ -135,9 +136,17 @@ html {
 }
 
 .barra_avanzamento {
-    border: 2px solid lightgray;
+    height: 4px;
+    background-color: var(--textcolor);
     width: 100%;
-    border-radius: 4px;
+    border-radius: 999px;
+}
+
+.barra_avanzamento_inside {
+    width: 23%;
+    height: 4px;
+    background-color: white;
+    border-radius: 999px;
 }
 
 .barra_avanzamento.player {
@@ -195,7 +204,9 @@ html {
     line-height: 35px;
 }
 
-.playlist {
+.playlist,
+.list-ricerca-info
+ {
     text-transform: uppercase;
     margin-bottom: 12px;
 }
@@ -224,6 +235,7 @@ html {
 
 .arrow-sidebar {
     font-size: 11px;
+    display: inline-block;
 }
 
 .user {
@@ -252,6 +264,60 @@ html {
     margin: 15px 0;
 }
 
+.list-ricerca-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    color: var(--textcolor);
+    font-size: 13px;
+    margin: 22px;
+}
+
+.in-evidenza::after {
+    content: "";
+    display: block;
+    border: 1px solid greenyellow;
+    width: 30%;
+    margin: 2px auto;
+}
+
+/* .content_main {
+    margin: 10px;
+} */
+
+.recently-played {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cover-album {
+    padding: 30px;
+    background-color: red;
+    aspect-ratio: 1;
+    width: 180px;
+}
+
+.album {
+    /* flex-basis: calc(100% / 3); */
+
+}
+
+.album_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+@media screen and (max-width:991px) {
+    .list-ricerca-info {
+        flex-wrap: wrap;
+    }
+    .album_list {
+        flex-wrap: wrap;
+    }
+}
 
 @media screen and (max-width:575px) {
     .text-menu-sidebar {
@@ -283,6 +349,9 @@ html {
         display: flex;
         flex-wrap: wrap;
         gap: 2px;
+    }
+    .cover-album {
+        width: 220px;
     }
 }
 

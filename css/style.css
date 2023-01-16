@@ -41,6 +41,7 @@ html {
 .col__main {
     height: calc(100vh - 90px);
     flex-grow: 1;
+    overflow-y: scroll;
 }
 
 .row-top {
@@ -281,12 +282,19 @@ html {
     margin: 2px auto;
 }
 
-/* .content_main {
-    margin: 10px;
-} */
-
-.recently-played {
+.recently-played,
+.album-for__doe {
     font-size: 24px;
+    margin: 30px 0;
+}
+
+.album-for__doe {
+    margin-bottom: 10px;
+}
+
+.suggerimenti {
+    font-size: 12px;
+    color: var(--textcolor);
     margin-bottom: 30px;
 }
 
@@ -297,14 +305,24 @@ html {
     width: 180px;
 }
 
-.album {
-    /* flex-basis: calc(100% / 3); */
-
+.subtitle {
+    margin-top: 5px;
+    color: var(--textcolor);
+    font-size: 13px;
 }
 
 .album_list {
     display: flex;
-    justify-content: space-around;
+    gap: 15px;
+}
+
+.content_main {
+    margin: 15px;
+}
+
+.song_title {
+    text-align: center;
+    margin-top: 15px;
 }
 
 
@@ -316,6 +334,9 @@ html {
     }
     .album_list {
         flex-wrap: wrap;
+    }
+    .cover-album {
+        width: 150px;
     }
 }
 

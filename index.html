@@ -11,83 +11,95 @@
 <body class="container">
     <div class="row row-top">
         <aside class="sidebar">
-            <div class="logo sidebar-item">
-                <img src="./img/logo.svg" alt="">
-            </div>
-            <div class="logo-small">
-                <img src="./img/logo-small.svg" alt="">
+            <div class="logo-box padding_sidebar">
+                <img  class="logo" src="./img/logo.svg" alt="">
+                <img class="logo-small" src="./img/logo-small.svg" alt="">
             </div>
             <div class="sidebar-menu sidebar-item">
-            <div>       
-                <div class="big-icon">
-                    <i class="fa-solid fa-house"></i>
-                </div>
+                <a class="menu-list home-button-playlist home-hover padding_sidebar">       
+                    <div class="icon-sidebar">
+                        <img src="./img/home.svg" alt="">
+                    </div>
                     <span class="text-menu-sidebar">Home</span>
-            </div>
-            <div>
-                <div class="font-color margin-sidebar_list big-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <span class="text-menu-sidebar">Cerca</span>
-            </div>
-                <div class="font-color">
-                    <div class="big-icon">
-                        <i class="fa-solid fa-grip-lines-vertical"></i>
+                </a>
+                <a class="menu-list padding_sidebar">
+                    <div class="icon-sidebar">
+                        <img src="./img/search.svg" alt="">
+                    </div>
+                    <span class="text-menu-sidebar">Cerca</span>
+                </a>
+                <a class="menu-list padding_sidebar">
+                    <div class="icon-sidebar">
+                        <img src="./img/libreria.svg" alt="">
                     </div>
                     <span class="text-menu-sidebar">La tua libreria</span>
-                </div>
+                </a>
             </div>
             <div class="sidebar-playlist text-menu-sidebar">
-                <p class="playlist">Playlist</p>
-                <ul class="music__list font-color">
-                    <li>
+                <p class="playlist home-button-playlist padding_sidebar">Playlist</p>
+                <ul class="music__list sidebar-menu">
+                    <li class="menu-list padding_sidebar">
                         <div class="button_crea_playlist">
                             <i class="fa-solid fa-square-plus"></i>
                         </div>
                         Crea Playlist
                     </li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
+                    <li class="menu-list padding_sidebar">
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li class="menu-list padding_sidebar">
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li class="menu-list padding_sidebar">
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li class="menu-list padding_sidebar">
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li class="menu-list padding_sidebar">
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li class="menu-list padding_sidebar">
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li class="menu-list padding_sidebar">
+                        <a href="#">Nome Playlist</a>
+                    </li>
                 </ul>
             </div>
-            <div class="sidebar_installa-app font-color">
-                <div class="arrow-sidebar">
-                    <i class="fa-solid fa-circle-arrow-down"></i>
+            <a class="sidebar_installa-app menu-list padding_sidebar">
+                <div class="icon-sidebar">
+                    <img src="./img/download.svg" alt="">
                 </div>
                 <span class="text-menu-sidebar">Installa app</span> 
-            </div>
-            <div class="border-sidebar text-menu-sidebar font-color"></div>
-            <div class="login_sidebar">
-                <div class="user arrow-sidebar">
-                    <i class="fa-solid fa-circle-user"></i>
+            </a>
+            <div class="border-sidebar text-menu-sidebar padding_sidebar"></div>
+            <div class="login_sidebar menu-list padding_sidebar">
+                <div class="user arrow-sidebar icon-sidebar">
+                    <img src="./img/profile.svg" alt="">
                 </div>
                 <span class="text-menu-sidebar">John Doe</span>
             </div>
         </aside>
         <div class="col__main">
-            <div class="button-effettua__uppgrade">
+            <div class="button-effettua__upgrade">
                 <button>EFFETTUA L'UPGRADE</button>
             </div>
                 <ul class="list-ricerca-info">
                     <li class="in-evidenza">in evidenza</li>
-                    <li>podcast</li>
-                    <li>classifiche</li>
-                    <li>generi e mood</li>
-                    <li>nuove uscite</li>
-                    <li>scopri</li>
+                    <li class="menu-list">podcast</li>
+                    <li class="menu-list">classifiche</li>
+                    <li class="menu-list">generi e mood</li>
+                    <li class="menu-list">nuove uscite</li>
+                    <li class="menu-list">scopri</li>
                 </ul>
                 <div class="content_main">
                     <div class="album_main">
                         <p class="recently-played">Recently played</p>
                         <div class="album_list">
-                            <div class="album">
+                            <div class="album_card">
                                 <div class="cover-album">
-                                    
+                                    <img src="./img/metal_lifting.jpg" alt="">
                                 </div>
                                 <div class="song_title">
                                     <p>Heavy Metal</p>
@@ -95,8 +107,12 @@
                                 </div>
                             </div>
 
-                            <div class="album">
+                            <div class="album_card">
+                                <div class="display-hover">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                                 <div class="cover-album">
+                                    <img src="./img/stranger.jpeg" alt="">
                                 </div>
                                 <div class="song_title">
                                     <p>Stranger Thinghs, Vol. <br>1 (a Netflix Original Series Soundtrack)</p>
@@ -104,9 +120,9 @@
                                 </div>
                             </div>
 
-                            <div class="album">
+                            <div class="album_card">
                                 <div class="cover-album">
-                                    
+                                    <img src="./img/aquietplace.jpeg" alt="">
                                 </div>
                                 <div class="song_title">
                                     <p>A Quiet place</p>
@@ -114,28 +130,29 @@
                                 </div>
                             </div>
 
-                            <div class="album">
+                            <div class="album_card">
                                 <div class="cover-album">
-                                    
+                                    <img src="./img/split.jpeg" alt="">
                                 </div>
                                 <div class="song_title">
                                     <p>Split</p>
                                     <p class="subtitle">subtitle</p>
                                 </div>
-
                             </div>
-                            <div class="album">
+
+                            <div class="album_card">
                                 <div class="cover-album">
-                                    
+                                    <img src="./img/cure.jpeg" alt="">
                                 </div>
                                 <div class="song_title">
                                     <p>A cure for wellness</p>
                                     <p class="subtitle">subtitle</p>
                                 </div>
                             </div>
-                            <div class="album">
+
+                            <div class="album_card">
                                 <div class="cover-album">
-                                    
+                                    <img src="./img/sinister.jpeg" alt="">
                                 </div>
                                 <div class="song_title">
                                     <p>Sinister</p>
@@ -149,20 +166,39 @@
                         <p class="suggerimenti">Più ascolti, più accurati saranno i suggerimenti.</p>
                     </div>
                     <div class="album_list">
-                        <div class="album">
+                        <div class="album_card">
                             <div class="cover-album">
-                                
+                                <img src="./img/radar.jpeg" alt="">
                             </div>
                             <p class="song_title">Release Radar</p>
                         </div>
-                        <div class="album">
+                        <div class="album_card">
                             <div class="cover-album">
-                                
+                                <img src="./img/mixdaily.jpeg" alt="">
                             </div>
                             <p class="song_title">Daily Mix 1</p>
                         </div>
+                    </div>
+
+
+                    <p class="album-for__doe">Artisti più popolari</p>
+                    <p class="suggerimenti">Più ascolti, più accurati saranno i suggerimenti.</p>
+
+                    <div class="album_list">
+                        <div class="album_card">
+                            <div class="cover-album-round">
+                                <img src="./img/youg.jpeg" alt="">
+                            </div>
+                            <p class="song_title">Release Radar</p>
+                        </div>
+                        <div class="album_card">
+                            <div class="cover-album-round">
+                                <img src="./img/einaudi.jpeg" alt="">
+                            </div>
+                            <p class="song_title">Daily Mix 1</p>
                         </div>
                     </div>
+
 
 
                 </div>
@@ -228,7 +264,7 @@
             </div>
     
     
-    
+            
             <div class="col col-player-right">
                 <div class="right-buttons">
                         <i class="fa-solid fa-list"></i>

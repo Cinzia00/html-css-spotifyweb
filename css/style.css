@@ -307,6 +307,22 @@ html {
     left: 25px;
 }
 
+.cover-album {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+
+.cover-album:hover .circle_play {
+    display: block;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    left: 65px;
+    top: 65px;
+}
+
 .in-evidenza:hover {
     color: white;
 }
@@ -332,7 +348,7 @@ html {
     text-align: center;
 }
 
-.display-hover {
+.circle_play {
     display: none;
 }
 
@@ -385,6 +401,14 @@ html {
     .icon {
         flex-wrap: wrap;
     }
+    .cover-album:hover .circle_play {
+        display: block;
+        font-size: 50px;
+        color: white;
+        position: absolute;
+        left: 55px;
+        top: 55px;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -420,6 +444,15 @@ html {
         display: flex;
         flex-wrap: wrap;
         gap: 2px;
+    }
+
+    .cover-album:hover .circle_play {
+        display: block;
+        font-size: 50px;
+        color: white;
+        position: absolute;
+        left: 80px;
+        top: 80px;
     }
 }
 

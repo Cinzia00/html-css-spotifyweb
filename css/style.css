@@ -139,6 +139,14 @@ html {
     border-radius: 999px;
 }
 
+.barra_avanzamento_inside.player:hover {
+    background-color: var(--green);
+}
+
+.barra_avanzamento_inside:hover {
+    background-color: var(--green);
+}
+
 .barra_avanzamento.player {
     margin: 0 15px;
 }
@@ -187,7 +195,6 @@ html {
 
 .home-hover::before {
     content: "";
-    display: ;
     background-color: var(--green) ;
     width: 4px;
     position: absolute;
@@ -278,6 +285,13 @@ html {
     background-color: var(--darkgray);
 }
 
+.button-effettua__upgrade .btn_upgrade {
+    
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
 .btn_upgrade:hover {
     zoom: 100%;
 }
@@ -285,6 +299,7 @@ html {
 .list-ricerca-info {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
     color: var(--textcolor);
     font-size: 13px;
@@ -308,9 +323,6 @@ html {
 }
 
 .cover-album {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     position: relative;
 }
 
@@ -319,8 +331,9 @@ html {
     font-size: 50px;
     color: white;
     position: absolute;
-    left: 65px;
-    top: 65px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .in-evidenza:hover {
@@ -352,7 +365,7 @@ html {
     display: none;
 }
 
-.album_card:hover {
+.album_card:hover img {
     opacity: 0.7;
 }
 
@@ -377,7 +390,6 @@ html {
 }
 
 .song_title {
-    /* text-align: center; */
     margin-top: 15px;
 }
 
@@ -385,8 +397,6 @@ html {
     border-radius: 50%;
     aspect-ratio: 1;
 }
-
-
 
 
 @media screen and (max-width:991px) {
@@ -411,6 +421,7 @@ html {
     }
 }
 
+
 @media screen and (max-width:575px) {
 
     .text-menu-sidebar {
@@ -431,7 +442,6 @@ html {
         width: calc(100% / 2 - 15px / 2);
     }
 
-
     .cover-row-bottom {
         width: 35px;
     }
@@ -451,19 +461,11 @@ html {
         font-size: 50px;
         color: white;
         position: absolute;
-        left: 80px;
-        top: 80px;
+        left: 50px;
+        top: 50px;
     }
-}
 
-
-/* MEDIAQUERY MACRO-STRUTTURA */
-
-@media screen and (max-width:575px) {
     .sidebar {
         flex-basis: 50px;
     }
-
 }
-
-/* ***************************** */
